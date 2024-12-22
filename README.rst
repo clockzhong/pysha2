@@ -22,6 +22,8 @@ drive failure. Fortunately, the library proved useful to some at the
 time (due to the prevalence of Python 2.3 and 2.4), and so I was able
 to recover all but the unit tests (which I later rewrote).
 
+This library now could run in Python3.10 without any problem because of my changes(ClockZhong)
+
 Usage
 =====
 
@@ -34,7 +36,7 @@ A quick example of hashing a string::
 
     import sha2
 
-    print sha2.sha256('Can you keep a secret?').hexdigest()
+    print(sha2.sha256('Can you keep a secret?').hexdigest())
 
 Testing
 =======
