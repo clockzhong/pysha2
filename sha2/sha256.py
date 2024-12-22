@@ -102,7 +102,6 @@ class sha256(object):
             padlen = 119-mdi
         
         r = self.copy()
-        #print(type('\x80'), type('\x00'), type(length))
         r.update(b'\x80'+(b'\x00'*padlen)+length)
         return b''.join([struct.pack('!L', i) for i in r._h[:self._output_size]])
         
